@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+  </header>
+  <main>
+    <ul class="gallery">
+      {% for item in site.data.spotlights %}
+      <li>
+        <a href="{{ item.repo }}">{{ item.name }}</a>
+        <span class="meta">{{ item.license }} &middot; {{ item.scope }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </main>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Accepted gallery entries. Append one item per accepted project.
+# Fields: name, repo, license, scope.
+- name: "Skylark Charts"
+  repo: "https://github.com/skylark-org/charts"
+  license: "Apache-2.0"
+  scope: "community"
